@@ -1,0 +1,17 @@
+<%= form_for @item do |t| %>
+
+<%= t.label :"Item Number" %></br>
+<%= t.text_field :Item_Number %></br>
+<%= t.label :"Item Name" %></br>
+<%= t.text_field :Item_Name %></br>
+<%= t.label :"Item Qty" %></br>
+<%= t.text_field :Qty %></br>
+<%= t.label :"Unit of measure"  %></br>
+<%= t.text_field :unit_of_measure %></br>
+<%= t.label :"Frequency" %></br>
+<%= t.text_field :Frequency %></br>
+
+
+<%= t.submit %>
+
+<%end%>

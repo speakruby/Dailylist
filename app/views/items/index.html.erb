@@ -1,0 +1,26 @@
+<h1> My Grocery List</h1>
+<%= link_to "Add a item", new_item_path %>
+
+<p>
+<table>
+  <tr>
+   
+    <th>Item Number</th>
+    <th>Item Description</th>
+  </tr>
+  <% @item.each do |t| %>
+  <tr>
+    <td><%= t.Item_Number  %></td>
+    <td><%= t.Item_Name  %></td>
+    <td><%= link_to "Edit", edit_item_path(t) %> </td>
+    <td><%= link_to "More", item_path(t) %></td>
+    <td><%= link_to "Delete", item_path(t), method: :delete, data:{confirm: "Are you sure"} %></td>
+   
+   </tr>
+   <%end%>
+  
+</table>
+
+
+
+</p>

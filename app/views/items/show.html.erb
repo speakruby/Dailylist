@@ -1,0 +1,25 @@
+<p>
+<table>
+  <tr>
+    <th>Item ID |</th>
+    <th>Item Number |</th>
+    <th>Item Description |</th>
+    <th>Qty |</th>
+    <th>unit_of_measure |</th>
+    <th>Frequency </th>
+  </tr>
+  <tr>
+    <td><%= @item.id %></td>
+    <td><%= @item.Item_Number  %></td>
+    <td><%= @item.Item_Name  %></td>
+    <td><%= @item.Qty  %></td>
+    <td><%= @item.unit_of_measure  %></td>
+    <td><%= @item.Frequency %></td>
+ </tr>
+   
+  
+</table>
+</p>
+
+
+<%= link_to "Main Lsit", items_path %>

@@ -1,0 +1,13 @@
+<h1> Please enter the details for the new item</h1>
+
+<% if @item.errors.any? %>
+<% @item.errors.full_messages.each do |t| %>
+
+<ul><li><%= t %></li></ul>
+
+<%end%>
+<%end%>
+
+<%= render 'newform' %>
+
+
